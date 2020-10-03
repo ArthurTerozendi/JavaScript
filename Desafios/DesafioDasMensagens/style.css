@@ -1,0 +1,12 @@
+.botao {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.616);
+    position: relative;
+    border: 4px;
+    text-align: center;
+    line-height: 90px;
+    border-color: red;
+    color: aliceblue;
+    float: left;
+}
