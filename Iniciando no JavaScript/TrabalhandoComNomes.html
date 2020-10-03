@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(230, 183, 123);
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+        <script>
+        var nome = window.prompt("Qual é seu nome?");
+        document.write(`<p>Olá, ${nome}! Seu nome tem ${nome.length} letras.</p>`)
+        document.write(`<p>Vai tomar no cu ${nome}</p>`)
+        /*
+            Ternario = a ? b : c
+            a = condição
+            b = se a condição for verdadeira
+            c = se a condição for falsa 
+        */
+        /*Formata o salario para configuração brasileira
+        var salario = window.prompt("Qual é o seu salario");
+        salario.toLocaleString('pt-BR', {style : 'currency', currency : 'BRL'});
+        document.write(`<p> ${salario} </p>`) */
+        
+    </script>
+</body>
+</html>

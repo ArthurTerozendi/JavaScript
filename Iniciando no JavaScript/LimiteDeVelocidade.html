@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limite de velocidade!</title>
+
+    <style>
+        div#multa {
+            background-color: rgb(197, 185, 13);
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <input type="number" name="velocidade" id="vel">
+    <button onclick="verificarLimiteVelocidade()"> Enviar </button>
+    <div id="multa" >  </div>
+    <script> 
+        function verificarLimiteVelocidade () {
+            var velocidade = Number(document.getElementById('vel').value)
+            var div = document.getElementById('multa');
+                   
+            if (velocidade > 60) { 
+                div.style.backgroundColor = 'red';
+                div.innerText = 'Multado';
+            } else {
+                document.getElementById('multa').style.backgroundColor = 'green';
+                div.innerText = ' ';
+            }
+        }
+    </script>
+</body>
+</html>

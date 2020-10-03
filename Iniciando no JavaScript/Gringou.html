@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vc é gringou?!</title>
+</head>
+<body>
+    <input type="text" id="nasc">
+    <input type="submit" value="Enviar" onclick="verificarNascionalidade()">
+    <label id="nasc"> Gringou </label>
+    <script>
+        function verificarNascionalidade() {
+            var nasc = document.querySelector('input#nasc');
+            var div = document.querySelector('label#nasc');
+            nasc = nasc.value;
+            
+            if (nasc == 'brasil') {
+                div.innerText =  'brasileiro';               
+            } else {
+                div.innerText = 'gringou!';
+            }
+        }
+    </script>
+</body>
+</html>

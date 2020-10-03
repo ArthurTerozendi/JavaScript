@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa com DOM</title>
+</head>
+<body>
+    <h1> Inicando no DOM </h1>
+    <p> Oi como vc ta?!</p>
+    <div> Clique aqui </div>
+    <div> Não clique aqui </div>
+    <p> Olá </p>
+    <p id = 'p1'> Vai se </p>
+    <p class = 'p2'> fuder </p>  
+    <script> 
+        //selecionando por tag
+        var nome = document.getElementsByTagName('p')[0];
+        //selecionando por id
+        var p1 = document.getElementById('p1');
+        //selecionando por classe
+        var p2 = document.getElementsByClassName('p2')[0];
+        //selecionando com Seletores
+        var div = document.querySelector('div');
+
+        p1.style.color = 'red';
+        p2.style.color = 'green';
+        div.style.backgroundColor = 'aquamarine';
+
+        var corpo = window.document.body;
+        
+        nome.style.fontFamily = 'Arial'
+    </script>
+</body>
+</html>
