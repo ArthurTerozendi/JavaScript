@@ -21,7 +21,13 @@ function gerarSenha() {
 
     senha = getRandomArray(senha);
 
-    console.log(senha);
+    var senhaString = "";
+
+    for (let i = 0; i < senha.length; i++) {
+        senhaString += senha[i] + "";
+    }
+    console.log(senhaString);
+    document.getElementById('senha').innerHTML = `<p style="visibility: visible"> ${senhaString} </p>`;
 }
 
 function getRandomInt(max) {
